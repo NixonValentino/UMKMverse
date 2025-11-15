@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKMverse</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/assets/UMKMverse.png" alt="">
+            </div>
+            <div class="navigation" id="navigation" role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                </ul>
+            </div>
+        </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        <div class="nav-right">
+            <button class="explore-btn">Jelajahi UMKM</button>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Cari UMKM..." class="search-input">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Bridging Section -->
+    <section class="bridging">
+        <div class="bridging-content">
+            <h2 class="bridging-title">Jelajahi Kuliner dan layanan Lokal</h2>
+            <p class="bridging-subtitle">Temukan cita rasa autentik dan juga nikmati layanan jasa di area pulo gebang</p>
+            <div class="bridging-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Warung Legendaris</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Menu Pilihan</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Pelanggan Puas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UMKM Directory Section -->
+    <section class="directory" id="directory">
+        <div class="directory-header">
+            <h2 class="directory-title">Pilihan Terbaik Hari Ini</h2>
+            <div class="category-filter">
+                <button class="category-filter-btn active" data-category="all">Semua</button>
+                <button class="category-filter-btn" data-category="Makanan">Makanan</button>
+                <button class="category-filter-btn" data-category="Minuman">Minuman</button>
+                <button class="category-filter-btn" data-category="Jasa">Jasa</button>
+            </div>
+        </div>
+        <div class="umkm-grid" id="umkmGrid">
+            <!-- UMKM cards will be here -->
+        </div>
+        <div class="show-more-container">
+            <button id="showMoreBtn" class="show-more-btn">Tampilkan Lebih Banyak</button>
+        </div>
+    </section>
+
+    <!-- UMKM Detail Modal -->
+    <div id="umkmDetailModal" class="modal">
+        <div class="modal-content detail-content">
+            <span class="close">&times;</span>
+            <div id="umkmDetail">
+                <!-- UMKM detail will be dynamically inserted here (includes image slider) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Promotional Showcase -->
+    <section class="promotional-showcase">
+        <div class="promo-container">
+            <div class="slider-minimal" id="promoSlider">
+                <div class="slides-wrapper">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="/assets/3.webp" alt="Promotional Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/6.webp" alt="Promotional Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/4.webp" alt="Promotional Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/5.webp" alt="Promotional Image 4">
+                        </div>
+                    </div>
+                    <div class="slider-progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="slider-navigation">
+                        <button class="nav-btn prev" id="promoPrevBtn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="slider-dots" id="promoDots"></div>
+                        <button class="nav-btn next" id="promoNextBtn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-section">
+        <div class="container">
+            <h2 class="leaderboard-title">Top UMKM Terbaik</h2>
+            <div class="leaderboard-tabs">
+                <button class="tab-btn active" data-category="food-bev">🍜 Makanan & Minuman</button>
+                <button class="tab-btn" data-category="service">💼 Jasa</button>
+            </div>
+            <div class="leaderboard-container">
+                <div class="leaderboard-content" id="foodBevLeaderboard">
+                    <!-- Food & Beverage leaderboard will be here -->
+                </div>
+                <div class="leaderboard-content" id="serviceLeaderboard" style="display: none;">
+                    <!-- Service leaderboard will be here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">UMKMverse</h3>
+                <p class="footer-description">Platform digital yang memberdayakan UMKM Indonesia untuk berkembang dan bersaing di pasar global.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="#directory">Jelajahi UMKM</a></li>
+                    <li><a href="#leaderboard">Top UMKM</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Kategori</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Makanan</a></li>
+                    <li><a href="#">Minuman</a></li>
+                    <li><a href="#">Jasa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <p class="footer-contact">Pulo Gebang, Jakarta Timur</p>
+                <p class="footer-contact">+62 XXX XXXX XXXX</p>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2024 UMKMverse. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- java script -->
+    <script src="/javascript/script.js"></script>
+    <script>
+        // Hamburger Menu Functionality
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+        const navigation = document.getElementById('navigation');
+
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+            navigation.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = navigation.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                navigation.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target)) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                navigation.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
