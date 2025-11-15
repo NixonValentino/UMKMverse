@@ -5,7 +5,7 @@ const umkmData = [
         name: "Ayam Geprek Batara",
         category: "Makanan",
         images: [
-            "assets/AyamGeprek/Profil.jpg",
+            "assets/AyamGeprek/profil.jpg",
             "assets/AyamGeprek/ayam.jpg",
             "assets/AyamGeprek/nasi.jpg",
             "assets/AyamGeprek/pucuk.jpg"
@@ -163,7 +163,7 @@ const umkmData = [
         id: 15,
         name: "Pop Ice Mba Wik",
         category: "Minuman",
-        images: ["assets/poice/profil.png","assets/poice/taro.PNG","assets/poice/coklat.PNG","assets/poice/choco.PNG"],
+        images: ["assets/pop/profil.png","assets/pop/TARO.PNG","assets/pop/COKLAT.PNG","assets/pop/CHOCO.PNG"],
         location: "Cakung, Jakarta Timur",
         rating: 4.6,
         description: "Minuman manis penuh rasa dan kesegaran! Dari cokelat, stroberi, hingga taro, semua diblender lembut dengan es yang menyegarkan.",
