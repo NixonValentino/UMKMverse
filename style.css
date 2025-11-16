@@ -153,7 +153,7 @@ nav ul li a.active {
 }
 
 .hero-content {
-    background-image: url(/assets/banner.png);
+    background-image: url(public/assets/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
