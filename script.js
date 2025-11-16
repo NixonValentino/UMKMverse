@@ -6,9 +6,9 @@ const umkmData = [
         category: "Makanan",
         images: [
             "assets/ayamgeprek/fil.jpg",
-            "assets/AyamGeprek/ayam.jpg",
-            "assets/AyamGeprek/nasi.jpg",
-            "assets/AyamGeprek/pucuk.jpg"
+            "assets/ayamgeprek/ayam.jpg",
+            "assets/ayamgeprek/nasi.jpg",
+            "assets/ayamgeprek/pucuk.jpg"
         ],
         location: "Pulo Gebang, Jakarta Timur",
         rating: 4.6,
