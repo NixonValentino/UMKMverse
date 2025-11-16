@@ -1614,7 +1614,7 @@ nav ul li a.active {
     .search-container {
         padding: 0 8px;
         bottom: 20px;
-        margin-bottom: -20px;
+        margin-bottom: -40px;
     }
 
     .search-box {
