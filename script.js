@@ -5,7 +5,7 @@ const umkmData = [
         name: "Ayam Geprek Batara",
         category: "Makanan",
         images: [
-            "assets/AyamGeprek/profil.jpg",
+            "assets/ayamgeprek/fil.jpg",
             "assets/AyamGeprek/ayam.jpg",
             "assets/AyamGeprek/nasi.jpg",
             "assets/AyamGeprek/pucuk.jpg"
